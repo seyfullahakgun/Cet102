@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses || Seyfullah Akgün</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./icons/logo.ico"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/4bb554de4b.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/courses.css">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sign Up!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form action="sign-up">
+                    <input type="text" name="name" class="form-input" placeholder="Name and Surname">
+                    <input type="email" placeholder="E-Mail" class="form-input">
+                    <input type="password" class="form-input" placeholder="Password">
+                    <input type="password" class="form-input" placeholder="Confirm Password">
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Sign Up!</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+    <!-- Header -->
+    <header>
+        <section class="logo">
+            <a href="./index.html"><img src="./images/logo.png" alt="Logo" id="logo"></a>
+        </section>
+        <nav>
+            <a href="./index.html" class="nav-element">Home</a>
+                <a href="./courses.html" class="nav-element"  style="background-color:rgb(63, 112, 244);">Courses</a>
+                <a href="./portfolio.html" class="nav-element">About Me</a>
+        </nav>
+        <section class="signup">
+            <button class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalLong">Sign Up</button>
+        </section>
+    </header>
+
+    <!-- Courses -->
+    <div class="courses">
+        
+        <a href="#intro">
+            <div class="course-box">
+                <img src="./images/intro.png" alt="Intro to Development">
+                <h3>Introduction to Development</h3>
+                <p>Git, Terminal, Algorithms, Scratch and Much More...</p>
+            </div>
+        </a>
+        <a href="#web">
+            <div class="course-box">
+                <img src="./images/web.png" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript, React.JS, Node.JS, and Much More...</p>
+            </div>
+        </a>
+        <a href="#mobile">
+            <div class="course-box">
+                <img src="./images/mobile.png" alt="Mobile Development">
+                <h3>Mobile Development</h3>
+                <p>Java, Kotlin, Flutter, React-Native, and Much More...</p>
+            </div>
+        </a>
+    </div>
+
+    <div id="intro">
+        <h1 class="buy-header">Intro to Development</h1>
+        <button class="btn btn-success">Buy Now!</button>
+        <div class="pricing">
+            <div class="prices">
+                <input type="radio" name="intro" id="intro1" checked="checked">
+                <label for="intro1" class="buy">
+                    <div class="pricing-box">
+                        <h2>Course</h2>
+                        <hr>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                        <p><i class="fa-solid fa-xmark fa-xl"></i> Lifetime support.</p>
+                        <p><i class="fa-solid fa-xmark fa-xl"></i> Direct contact with course instructor.</p>
+                        <p><i class="fa-solid fa-xmark fa-xl"></i> Internship Program.</p>
+                        <p class="price">$10</p>
+                    </div>
+                </label>
+            </div>
+            <div class="prices">
+                <input type="radio" name="intro" id="intro2">
+                <label for="intro2" class="buy">
+                    <div class="pricing-box">
+                        <h2>Premium</h2>
+                        <hr>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Lifetime support.</p>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Direct contact with course instructor.</p>
+                        <p><i class="fa-solid fa-xmark fa-xl"></i> Internship Program.</p>
+                        <p class="price">$25</p>
+                    </div>
+                </label>
+            </div>
+            <div class="prices">
+                <input type="radio" name="intro" id="intro3">
+                <label for="intro3" class="buy">
+                        <h2>Elite</h2>
+                        <hr>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Lifetime support.</p>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Direct contact with course instructor.</p>
+                        <p><i class="fa-solid fa-check fa-xl"></i> Internship Program.</p>
+                        <p class="price">$50</p>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div id="web">
+            <h1 class="buy-header">Web Developemnt</h1>
+            <button class="btn btn-success">Buy Now!</button>
+            <div class="pricing">
+                <div class="prices">
+                    <input type="radio" name="web" id="web1" checked>
+                    <label for="web1" class="buy">
+                        <div class="pricing-box">
+                            <h2>Course</h2>
+                            <hr>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                            <p><i class="fa-solid fa-xmark fa-xl"></i> Lifetime support.</p>
+                            <p><i class="fa-solid fa-xmark fa-xl"></i> Direct contact with course instructor.</p>
+                            <p><i class="fa-solid fa-xmark fa-xl"></i> Internship Program.</p>
+                            <p class="price">$10</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="prices">
+                    <input type="radio" name="web" id="web2">
+                    <label for="web2" class="buy">
+                        <div class="pricing-box">
+                            <h2>Premium</h2>
+                            <hr>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Lifetime support.</p>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Direct contact with course instructor.</p>
+                            <p><i class="fa-solid fa-xmark fa-xl"></i> Internship Program.</p>
+                            <p class="price">$25</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="prices">
+                    <input type="radio" name="web" id="web3">
+                    <label for="web3" class="buy">
+                            <h2>Elite</h2>
+                            <hr>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Lifetime support.</p>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Direct contact with course instructor.</p>
+                            <p><i class="fa-solid fa-check fa-xl"></i> Internship Program.</p>
+                            <p class="price">$50</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="mobile">
+                <h1 class="buy-header">Mobile Development</h1>
+                <button class="btn btn-success">Buy Now!</button>
+                <div class="pricing">
+                    <div class="prices">
+                        <input type="radio" name="mobile" id="mobile1" checked>
+                        <label for="mobile1" class="buy">
+                            <div class="pricing-box">
+                                <h2>Course</h2>
+                                <hr>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                                <p><i class="fa-solid fa-xmark fa-xl"></i> Lifetime support.</p>
+                                <p><i class="fa-solid fa-xmark fa-xl"></i> Direct contact with course instructor.</p>
+                                <p><i class="fa-solid fa-xmark fa-xl"></i> Internship Program.</p>
+                                <p class="price">$10</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="prices">
+                        <input type="radio" name="mobile" id="mobile2">
+                        <label for="mobile2" class="buy">
+                            <div class="pricing-box">
+                                <h2>Premium</h2>
+                                <hr>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Lifetime support.</p>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Direct contact with course instructor.</p>
+                                <p><i class="fa-solid fa-xmark fa-xl"></i> Internship Program.</p>
+                                <p class="price">$25</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="prices">
+                        <input type="radio" name="mobile" id="mobile3">
+                        <label for="mobile3" class="buy">
+                                <h2>Elite</h2>
+                                <hr>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Acces to course contents.</p>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Lifetime support.</p>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Direct contact with course instructor.</p>
+                                <p><i class="fa-solid fa-check fa-xl"></i> Internship Program.</p>
+                                <p class="price">$50</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+    <!-- Footer -->
+    <footer>
+        <p>Seyfullah Akgün © 2022</p>
+        <div class="social">
+          <a href="https://www.instagram.com/swofgod/" target="_blank"><i class="fa-brands fa-instagram-square fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/seyfullah-akgun/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://twitter.com/swofgod" target="_blank"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.hackerrank.com/seyfullahakgun" target="_blank"><i class="fa-brands fa-hackerrank fa-2x"></i></a>
+          <a href="https://github.com/seyfullahakgun" target="_blank"><i class="fa-brands fa-github-square fa-2x"></i></a>
+          <a href="mailto:seyfullah.akgn@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
+          <a href="tel:+905442827393"><i class="fa-solid fa-square-phone fa-2x"></i></a>
+        </div>
+      </footer>
+    
+</body>
+</html>

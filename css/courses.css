@@ -1,0 +1,136 @@
+
+.courses {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+.course-box {
+    background-color: black;
+    width: 300px;
+    height: 560px;
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+    color: white;
+}
+.course-box img {
+    width: 300px;
+}
+.course-box h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#intro {
+    background: url("../images/carousel1.png") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+.buy-header {
+    color: white;
+    font-family: 'Saria', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+.pricing {
+   width: 80%;
+   display: flex;
+   margin: auto;
+   justify-content: space-evenly;
+}
+.prices {
+    display: flex;
+    flex-direction: column;
+}
+.fa-check {
+    color: green;
+}
+.fa-xmark {
+    color: red;
+}
+.buy {
+    background-color: white;
+    padding: 20px;
+    border-radius:20px ;
+    cursor: pointer;
+}
+.buy h2{
+    text-align: center;
+}
+.btn-success {
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: -150px;
+    background-color: rgb(63, 112, 244);
+    border: 1px solid rgb(63, 112, 244);
+}
+#intro1:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#intro2:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#intro3:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+.prices input {
+    visibility: hidden;
+}
+.price {
+    padding: 10px 30px 10px 30px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 20px;
+    margin: auto;
+    background-color: black;
+    color: white;    
+}
+#web {
+    background: url("../images/carousel2.png") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+#web1:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#web2:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#web3:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#mobile {
+    background: url("../images/carousel3.png") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+#mobile1:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#mobile2:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
+#mobile3:checked ~ label {
+    background-color: rgb(63, 112, 244);
+    color: white;
+}
